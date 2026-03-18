@@ -1,19 +1,27 @@
 import React from "react";
+import reactLogo from "../assets/react.svg";
+import "./ProfileCard.css";
 
 function ProfileCard({ nombre, edad, profesion, ciudad }) {
   return (
-    <div className="card" style={{ width: "18rem" }}>
-      <div className="card-body">
+    <div className="profile-card">
+      
+      <div className="profile-img-container">
+        <img src={reactLogo} alt="profile" className="profile-img" />
+      </div>
 
-        <h5 className="card-title">{nombre}</h5>
+      <div className="profile-body">
+        <h5 className="profile-name">{nombre}</h5>
+        <p className="profile-profesion">{profesion}</p>
 
-        <p className="card-text">
+        <p className="profile-info">
           <strong>Edad:</strong> {edad} <br />
-          <strong>Profesión:</strong> {profesion} <br />
           <strong>Ciudad:</strong> {ciudad}
         </p>
 
+        <button className="profile-btn">Ver perfil</button>
       </div>
+
     </div>
   );
 }

@@ -7,15 +7,13 @@ import ProfileCard from './components/Profile'
 
 function App() {
   return (
-    <div className="container mt-5">
-
+    <div className="container d-flex justify-content-center align-items-center vh-100">
       <ProfileCard 
         nombre="Jennifer Alfaro"
         edad={17}
         profesion="Desarrollo de Software"
         ciudad="San Salvador"
       />
-
     </div>
   );
 }
