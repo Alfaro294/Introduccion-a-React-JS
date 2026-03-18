@@ -20,7 +20,7 @@ function Formulario() {
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log(formData);
-    alert("Formulario enviado 🚀");
+    alert("Formulario enviado");
   };
 
   return (
