@@ -26,7 +26,6 @@ function Formulario() {
   return (
     <form onSubmit={handleSubmit} className="mt-4">
 
-      {/* INPUT */}
       <div className="mb-3">
         <label className="form-label">Usuario</label>
         <input
@@ -38,7 +37,6 @@ function Formulario() {
         />
       </div>
 
-      {/* EMAIL */}
       <div className="mb-3">
         <label className="form-label">Correo</label>
         <input
@@ -50,7 +48,6 @@ function Formulario() {
         />
       </div>
 
-      {/* SELECT */}
       <div className="mb-3">
         <label className="form-label">Opciones</label>
         <select
@@ -65,7 +62,6 @@ function Formulario() {
         </select>
       </div>
 
-      {/* CHECKBOX */}
       <div className="form-check mb-3">
         <input
           type="checkbox"
@@ -79,7 +75,6 @@ function Formulario() {
         </label>
       </div>
 
-      {/* BOTÓN */}
       <button type="submit" className="btn btn-primary">
         Enviar
       </button>
